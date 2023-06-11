@@ -1,0 +1,13 @@
+server:
+  port: 9192
+
+spring:
+  cloud:
+    stream:
+      bindings:
+        output:
+          destination: meu-topico
+      kafka:
+        binder:
+          brokers: localhost:9092
+          autoCreateTopics: true

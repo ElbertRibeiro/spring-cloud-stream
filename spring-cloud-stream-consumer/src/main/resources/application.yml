@@ -1,0 +1,9 @@
+spring:
+  cloud:
+    stream:
+      bindings:
+        input:
+          destination: meu-topico
+      kafka:
+        binder:
+          brokers: localhost:9092
